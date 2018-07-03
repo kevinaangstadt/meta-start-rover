@@ -1,0 +1,25 @@
+From b2091e7ae4c334c85348cb249cc1a762f93a3a33 Mon Sep 17 00:00:00 2001
+From: Kevin Angstadt <angstadt@umich.edu>
+Date: Wed, 9 May 2018 16:26:20 -0400
+Subject: [PATCH] enable spidev1
+
+---
+ drivers/platform/x86/up_board.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/platform/x86/up_board.c b/drivers/platform/x86/up_board.c
+index 6cee4b0..14e1a34 100644
+--- a/drivers/platform/x86/up_board.c
++++ b/drivers/platform/x86/up_board.c
+@@ -44,7 +44,7 @@ static bool spidev0 = true;
+ module_param(spidev0, bool, S_IRUGO);
+ MODULE_PARM_DESC(spidev0, "register a spidev device on SPI bus 2-0");
+ 
+-static bool spidev1 = false;
++static bool spidev1 = true;
+ module_param(spidev1, bool, S_IRUGO);
+ MODULE_PARM_DESC(spidev1, "register a spidev device on SPI bus 2-1");
+ 
+-- 
+2.7.4
+

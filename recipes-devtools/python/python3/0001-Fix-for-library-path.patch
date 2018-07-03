@@ -1,0 +1,33 @@
+From c0fca2d0ec430dfa36b7fa68b9e40581be23c0ad Mon Sep 17 00:00:00 2001
+From: Kevin Angstadt <angstadt@umich.edu>
+Date: Fri, 18 May 2018 12:02:03 -0400
+Subject: [PATCH] Fix for library path
+
+There's a massive bug I'm trying to hack around here
+We're going to try just ignoring paths starting with /usr
+---
+ Lib/distutils/unixccompiler.py | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+diff --git a/Lib/distutils/unixccompiler.py b/Lib/distutils/unixccompiler.py
+index 0f915b7..4f4f802 100644
+--- a/Lib/distutils/unixccompiler.py
++++ b/Lib/distutils/unixccompiler.py
+@@ -202,9 +202,11 @@ class UnixCCompiler(CCompiler):
+     # ccompiler.py.
+ 
+     def library_dir_option(self, dir):
+-        if dir.startswith("."):
+-            return "-L" + dir
+-        return "-L=" + dir
++        # there is a gnarly bug here
++        # KAA is hacking this to hopefully work
++        if dir.startswith("/usr"):
++            return "-L=" + dir
++        return "-L" + dir
+ 
+     def _is_gcc(self, compiler_name):
+         return "gcc" in compiler_name or "g++" in compiler_name
+-- 
+2.7.4
+

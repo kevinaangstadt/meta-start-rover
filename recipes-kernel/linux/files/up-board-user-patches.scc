@@ -1,0 +1,61 @@
+patch 0001-platform-x86-add-platform-drivers-for-UP-Board.patch
+patch 0002-x86-up-enable-I2C-GPIO-expanders-on-UP-Board-v0.2.patch
+patch 0003-x86-up-create-pinctrl-driver-for-UP-Board.patch
+patch 0005-i2c-designware-platdrv-use-fixed-bus-numbering-based.patch
+patch 0006-i2c-designware-platdrv-add-ACPI-method-query-to-get-.patch
+patch 0007-x86-up-register-spidev-device-by-default-on-UP-Board.patch
+patch 0008-spi-pxa2xx-allow-DMA-to-be-used-by-default-if-suppor.patch
+patch 0009-x86-up-register-pinctrl-mappings-before-device-drive.patch
+patch 0010-x86-up-fix-pin-mux-control-for-I2S-pins.patch
+patch 0011-i2c-designware-platdrv-fix-errors-in-FREQ-ACPI-metho.patch
+patch 0012-pinctrl-cherryview-add-option-to-set-open-drain-pin-.patch
+patch 0013-pinctrl-cherryview-add-handlers-for-pin_config_group.patch
+patch 0014-x86-up-register-pinmap-config-to-disable-open-drain-.patch
+patch 0016-x86-up-add-support-for-v0.3-UP-board-with-CPLD.patch
+patch 0017-spi-spi-pxa2xx-use-cs_gpio-if-valid.patch
+patch 0018-spi-spi-pxa2xx-add-GPIO-CS-lines-for-UP-platform.patch
+patch 0019-x86-up-register-spidev-device-on-UP-Board-SPI-2-1.patch
+patch 0020-x86-up-adding-dmi-match-for-V0.3-board-version.patch
+patch 0021-x86-up-add-support-for-v0.4-UP-board-with-CPLD.patch
+patch 0022-x86-up-fix-datatypes-for-32-bit-CPLD-registers.patch
+patch 0023-x86-up-add-driver-for-the-UP-board-LEDs.patch
+patch 0026-x86-up-prevent-concurrent-access-to-CPLD-config.patch
+patch 0027-iio-adc-ti-adc081c-add-acpi-match-ID.patch
+patch 0028-x86-up-support-ACPI-device-registration-for-ADC.patch
+patch 0029-x86-up-default-up_board.spidev1-to-false.patch
+patch 0030-mmc-sdhci-Fix-recovery-from-tuning-timeout.patch
+patch hdmiaudio/0001-drm-i915-remove-intel_hdmi-variable-declaration.patch
+patch hdmiaudio/0002-drm-i915-Add-headers-for-non-HDAudio-HDMI-interface.patch
+patch hdmiaudio/0003-drm-i915-changes-for-non-HDAudio-HDMI-interface.patch
+patch hdmiaudio/0004-drm-i915-power-related-changes-non-HDAudio-HDMI-inte.patch
+patch hdmiaudio/0005-drm-i915-Add-API-code-for-non-HDAudio-HDMI-interface.patch
+patch hdmiaudio/0006-drm-i915-enable-non-HDAudio-HDMI-interface-Makefile.patch
+patch hdmiaudio/0007-ALSA-Intel-Atom-add-Atom-non-HDAudio-HDMI-interface.patch
+patch hdmiaudio/0008-add-dependency-on-PM_RUNTIME.patch
+patch hdmiaudio/0009-hdmi_audio-Improve-position-reporting.patch
+patch hdmiaudio/0010-hdmi_audio-Fixup-some-monitor.patch
+patch hdmiaudio/0011-hdmi_audio-Fix-mishandling-of-AUD_HDMI_STATUS_v2-reg.patch
+patch hdmiaudio/0012-Create-a-platform-device-for-hdmi-audio-driver-and-a.patch
+ssdt_overlays/0001-efi-Merge-boolean-flag-arguments.patch
+ssdt_overlays/0002-spi-Uninline-spi_unregister_device.patch
+ssdt_overlays/0003-spi-Mark-instantiated-device-nodes-with-OF_POPULATE.patch
+ssdt_overlays/0004-ACPI-spi-attach-GPIO-IRQ-from-ACPI-description-to-SP.patch
+ssdt_overlays/0005-Documentation-acpi-add-SSDT-overlays-documentation.patch
+ssdt_overlays/0006-acpi-fix-enumeration-visited-flags-for-bus-rescans.patch
+ssdt_overlays/0007-acpi-add-support-for-ACPI-reconfiguration-notifiers.patch
+ssdt_overlays/0008-i2c-add-support-for-ACPI-reconfigure-notifications.patch
+ssdt_overlays/0009-spi-add-support-for-ACPI-reconfigure-notifications.patch
+ssdt_overlays/0010-efi-load-SSTDs-from-EFI-variables.patch
+ssdt_overlays/0011-acpi-Export-acpi_of_modalias-equiv-of-of_modalias_no.patch
+ssdt_overlays/0012-acpi-i2c-Initialize-info.type-from-of_compatible.patch
+ssdt_overlays/0013-acpi-spi-Initialize-modalias-from-of_compatible.patch
+ssdt_overlays/0014-spi-spidev-Add-ACPI-probing-support.patch
+ssdt_overlays/0015-ACPI-OSL-Clean-up-initrd-table-override-code.patch
+ssdt_overlays/0016-ACPI-OSL-Add-support-to-install-tables-via-initrd.patch
+patch kexec_i2c/0001-x86-platform-iosf_mbi-Remove-duplicate-definitions.patch
+patch kexec_i2c/0002-device-core-add-BUS_NOTIFY_DRIVER_NOT_BOUND-notifica.patch
+patch kexec_i2c/0003-Revert-ACPI-LPSS-allow-to-use-specific-PM-domain-dur.patch
+patch kexec_i2c/0004-ACPI-LPSS-allow-to-use-specific-PM-domain-during-pro.patch
+patch kexec_i2c/0005-ACPI-LPSS-do-delay-for-all-LPSS-devices-when-D3-D0.patch
+patch kexec_i2c/0006-ACPI-LPSS-power-on-when-probe-and-otherwise-when-rem.patch
+

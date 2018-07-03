@@ -1,0 +1,44 @@
+From 915a5b433454cab54cda47484390e84cfb8c7b5d Mon Sep 17 00:00:00 2001
+From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
+Date: Tue, 1 Mar 2016 16:25:04 -0600
+Subject: [PATCH 06/12] drm/i915: enable non-HDAudio HDMI interface Makefile
+
+Makefile for all previous patches
+
+This driver was downloaded from https://github.com/01org/baytrailaudio/
+
+...and had the changes to .config stripped and the revert on sound/init.c
+
+clean-up, port to 4.5 and intel-drm by Pierre Bossart
+
+Signed-off-by: David Henningsson <david.henningsson@canonical.com>
+Signed-off-by: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
+---
+ drivers/gpu/drm/i915/Makefile | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/drivers/gpu/drm/i915/Makefile b/drivers/gpu/drm/i915/Makefile
+index 0b88ba0..57406b2 100644
+--- a/drivers/gpu/drm/i915/Makefile
++++ b/drivers/gpu/drm/i915/Makefile
+@@ -14,7 +14,8 @@ i915-y := i915_drv.o \
+ 	  i915_sysfs.o \
+ 	  intel_csr.o \
+ 	  intel_pm.o \
+-	  intel_runtime_pm.o
++	  intel_runtime_pm.o \
++	  hdmi_audio_if.o
+ 
+ i915-$(CONFIG_COMPAT)   += i915_ioc32.o
+ i915-$(CONFIG_DEBUG_FS) += i915_debugfs.o
+@@ -39,6 +40,7 @@ i915-y += i915_cmd_parser.o \
+ 	  i915_trace_points.o \
+ 	  intel_lrc.o \
+ 	  intel_mocs.o \
++	  i915_rpm.o \
+ 	  intel_ringbuffer.o \
+ 	  intel_uncore.o
+ 
+-- 
+1.9.1
+
