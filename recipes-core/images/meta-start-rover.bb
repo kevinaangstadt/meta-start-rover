@@ -1,7 +1,7 @@
 DESCRIPTION = "Image with everything needed to run TRMO START scenarios on \
 APMrover2 based platform."
 
-DISTRO_FEATURES_append = " systemd aufs"
+DISTRO_FEATURES_append = " systemd aufs x11"
 
 VIRTUAL-RUNTIME_init_manager = "systemd"
 
