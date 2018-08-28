@@ -10,3 +10,5 @@ PYPI_PACKAGE = "pymavlink"
 inherit pypi
 
 BBCLASSEXTEND = "native nativesdk"
+
+R_DEPENDS = "${PYTHON_PN}-lxml ${PYTHON_PN}-future"
