@@ -17,7 +17,7 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_INSTALL += "kernel-devsrc openjre-8 git git-perltools python-pip \
+IMAGE_INSTALL += "rc-local kernel-devsrc openjre-8 git git-perltools python-pip \
     linux-firmware wireless-tools wpa-supplicant smartpm i2c-tools \
 		python-psutil screen tmux"
 
